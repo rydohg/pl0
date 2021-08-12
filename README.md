@@ -19,6 +19,11 @@ elsewhere.
 
 Scoping works like most programming languages.
 
+All programs must end with a period.
+
+Semicolons are only required after declarations, after ```end``` in a begin/end block, and 
+after all statements but the last in a statement list.
+See Code Blocks for an example.
 #### Code Blocks
 Anywhere ```<statement>``` is listed can be a single statement.
 If you want to do multiple instructions, replace ```<statement>```
@@ -31,6 +36,15 @@ begin
     <statement>
 end;
 ```
+
+#### Statements
+Statements can be anything from an assigment to a declaration. Some examples include
+```
+variable := 2 * 2;
+if <condition> then: ...
+begin ... end;
+```
+
 #### Function/Procedure Declaration:
 Procedures must be defined in a specific order. The procedure is declared with an identifier followed by constant declarations, variable declarations, then subprocedure declarations, and finally a statement or statement list.
 ```
