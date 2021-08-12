@@ -1,0 +1,62 @@
+/* Let's do some math! */
+/*
+Not everything here is necessary to do math but its
+there to test the parser/code generator
+*/
+const one := 1, two := 2;
+var x, y, power, addition, product, squared, powResult, input, isEven;
+procedure add;
+    var temp;
+    begin
+      temp := x;
+      addition := temp + y
+    end;
+
+procedure mult;
+    begin
+      product := x * y
+    end;
+
+procedure square;
+    begin
+      squared := x * x
+    end;
+
+procedure pow;
+    procedure multBySelf;
+        begin
+          powResult := powResult * x
+        end;
+    begin
+      powResult := x;
+      while power > 0 do
+        call multBySelf;
+        power := power - 1
+    end;
+
+procedure even;
+  begin
+    if input % 2 <> 0 then
+      isEven := 0
+    else
+      isEven := 1
+  end;
+
+begin
+   x := two;
+   y := 3;
+   call add;
+   call mult;
+   call square;
+   read input;
+   call even;
+   power := 3;
+   call pow;
+   write x;
+   write y;
+   write addition;
+   write product;
+   write squared;
+   write powResult;
+   write isEven
+end.
