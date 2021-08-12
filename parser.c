@@ -1,7 +1,6 @@
 /*
-    HW3: Parser for PL/0
+    Parser for PL/0
     Author: Ryan Doherty
-    Email: rdoherty20@knights.ucf.edu
 
     This program accepts input from the lexer in the
     form of a lexeme array and checks the grammar of the
